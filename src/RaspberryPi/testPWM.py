@@ -21,7 +21,7 @@ from time import sleep
 #///////////////// Define Motor Driver GPIO Pins /////////////////
 # Motor A, Left Side GPIO CONSTANTS
 PWM_DRIVE_LEFT = 14		# ENA - H-Bridge enable pin
-FORWARD_LEFT_PIN = 15	# IN1 - Forward Drive
+FORWARD_LEFT_PIN = 23	# IN1 - Forward Drive
 REVERSE_LEFT_PIN = 18	# IN2 - Reverse Drive
 # Motor B, Right Side GPIO CONSTANTS
 PWM_DRIVE_RIGHT = 25		# ENB - H-Bridge enable pin
