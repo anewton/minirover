@@ -1,12 +1,3 @@
-### .Net Core Rover Controller for Raspberry Pi
+# Source Code for Raspberry Pi Mini Rover Using an Xbox Wireless Controller and .Net Core 3.1
 
- - Install the socket library for python on the raspberry pi
-    ```
-    sudo apt-get install socket
-    ```
- - Install the gpiozero library for python3 on the raspberry pi
-    ```
-    sudo apt install python3-gpiozero
-    ```
- - The raspi is the socket server
- - The socket client running on a laptop using the .Net Core app
+[Blog post](https://tsugasoft.com/Blogs/Software/Raspberry%20Pi%20Mini%20Rover%20Using%20an%20Xbox%20Wireless%20Controller%20and%20.Net%20Core%203.1)
