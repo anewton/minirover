@@ -25,10 +25,10 @@ namespace lib
             {
                 var state = controller.GetState();
 
-                LeftStickX = (Math.Abs((float)state.Gamepad.LeftThumbX) < DEADBAND) ? 0 : (float)state.Gamepad.LeftThumbX / short.MinValue * -5;//00;
-                LeftStickY = (Math.Abs((float)state.Gamepad.LeftThumbY) < DEADBAND) ? 0 : (float)state.Gamepad.LeftThumbY / short.MaxValue * 5;//00;
-                RightStickX = (Math.Abs((float)state.Gamepad.RightThumbX) < DEADBAND) ? 0 : (float)state.Gamepad.RightThumbX / short.MaxValue * 5;//00;
-                RightStickY = (Math.Abs((float)state.Gamepad.RightThumbY) < DEADBAND) ? 0 : (float)state.Gamepad.RightThumbY / short.MaxValue * 5;//00;
+                LeftStickX = (Math.Abs((float)state.Gamepad.LeftThumbX) < DEADBAND) ? 0 : (float)state.Gamepad.LeftThumbX / short.MinValue * -100;
+                LeftStickY = (Math.Abs((float)state.Gamepad.LeftThumbY) < DEADBAND) ? 0 : (float)state.Gamepad.LeftThumbY / short.MaxValue * 100;
+                RightStickX = (Math.Abs((float)state.Gamepad.RightThumbX) < DEADBAND) ? 0 : (float)state.Gamepad.RightThumbX / short.MaxValue * 100;
+                RightStickY = (Math.Abs((float)state.Gamepad.RightThumbY) < DEADBAND) ? 0 : (float)state.Gamepad.RightThumbY / short.MaxValue * 100;
 
                 LeftAxis = string.Format("X: {0} Y: {1}", LeftStickX, LeftStickY);
                 RightAxis = string.Format("X: {0} Y: {1}", RightStickX, RightStickY);
